@@ -1,0 +1,37 @@
+{
+  "name": "InternQuest",
+  "version": "1.0.0",
+  "description": "Major Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "internquest": "cd internquest && npm start",
+    "mongoConnect": "cd MongoConnection && nodemon server.js",
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"npm run mongoConnect\" \"npm run internquest\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veggies143/InternQuest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veggies143/InternQuest/issues"
+  },
+  "homepage": "https://github.com/Veggies143/InternQuest#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "concurrently": "^6.5.1",
+    "express": "^4.18.2",
+    "mongoose": "^5.13.17",
+    "morgan": "^1.10.0",
+    "raw-body": "^2.4.0",
+    "react-bootstrap": "^1.5.2",
+    "react-password-toggle-icon": "^1.1.5",
+    "regexp-clone": "^1.0.0"
+  }
+}
